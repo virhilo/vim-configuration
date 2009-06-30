@@ -9,7 +9,7 @@ syntax on
 set ruler
 set showcmd
 set number
-set enc=utf8
+set enc=utf-8
 set fileencodings=utf-8
 set linebreak
 set textwidth=79
@@ -25,7 +25,7 @@ set autoindent
 
 "backup
 set backup
-set backupdir=/tmp
+set backupdir=~/backup/vim
 
 "szukanie
 set hlsearch
