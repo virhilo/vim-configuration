@@ -11,8 +11,8 @@ set showcmd
 set number
 set enc=utf-8
 set fileencodings=utf-8
-set linebreak
-set textwidth=79
+"set linebreak
+"set textwidth=80
 set backspace=indent,eol,start
 set history=1000
 
@@ -45,3 +45,7 @@ map ; :
 filetype on
 filetype plugin on
 filetype indent on
+
+"oznaczanie granicy 80 znakow
+au BufWinEnter *.py let w:m1=matchadd('Search', '\%<81v.\%>77v', -1)
+au BufWinEnter *.py let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
